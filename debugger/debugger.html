@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugger</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      function createFullName(firstName, lastName) {
+        const fullName = `${firstName} ${lastName}`;
+        return fullName;
+      }
+
+      const name = createFullName("Alian", "Hakim");
+      console.info(name);
+
+      function sum(...numbers) {
+        debugger;
+        let total = 0;
+        for (const number of numbers) {
+          total += number;
+        }
+        return total;
+      }
+
+      console.info(sum(1, 1, 1, 1, 1));
+    </script>
+  </body>
+</html>

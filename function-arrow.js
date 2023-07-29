@@ -1,3 +1,5 @@
+// arrow function tidak bisa mengakses this
+
 // const sayHello = (name) => {
 //   const say = `Hello ${name}`;
 //   console.info(say);
